@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1400 720" font-family="SF Mono, Consolas, monospace">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1430"/>
+      <stop offset="100%" stop-color="#04060c"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1a2547"/>
+      <stop offset="100%" stop-color="#0e1428"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#3a1d2c"/>
+      <stop offset="100%" stop-color="#0a0f1c"/>
+    </linearGradient>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M0,0 L10,5 L0,10 z" fill="#ffb547"/>
+    </marker>
+  </defs>
+
+  <rect width="1400" height="720" fill="url(#bg)"/>
+  <g opacity="0.12" stroke="#ffb547" stroke-width="0.5">
+    <path d="M0,80 L1400,80 M0,160 L1400,160 M0,240 L1400,240 M0,320 L1400,320 M0,400 L1400,400 M0,480 L1400,480 M0,560 L1400,560 M0,640 L1400,640"/>
+    <path d="M100,0 L100,720 M200,0 L200,720 M300,0 L300,720 M400,0 L400,720 M500,0 L500,720 M600,0 L600,720 M700,0 L700,720 M800,0 L800,720 M900,0 L900,720 M1000,0 L1000,720 M1100,0 L1100,720 M1200,0 L1200,720 M1300,0 L1300,720"/>
+  </g>
+
+  <text x="700" y="50" text-anchor="middle" font-size="28" font-weight="700" fill="#ffb547" letter-spacing="6">HEIMDALL</text>
+  <text x="700" y="78" text-anchor="middle" font-size="12" fill="#a8b8e0" letter-spacing="3">THE WATCHMAN AT THE GATE</text>
+
+  <g>
+    <rect x="80" y="120" width="320" height="540" rx="14" fill="url(#card)" stroke="#7c9bff" stroke-width="1.5"/>
+    <text x="240" y="155" text-anchor="middle" font-size="12" fill="#7c9bff" letter-spacing="3">LAYER 1 — DETECTORS</text>
+    <text x="240" y="195" text-anchor="middle" font-size="18" font-weight="700" fill="#e6edff">SYSTEM SCANNER</text>
+
+    <g transform="translate(100, 220)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• live process tree (psutil)</text>
+    </g>
+    <g transform="translate(100, 275)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• network connection map</text>
+    </g>
+    <g transform="translate(100, 330)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• registry auto-start hunt</text>
+    </g>
+    <g transform="translate(100, 385)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• VirusTotal hash lookup</text>
+    </g>
+    <g transform="translate(100, 440)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• AbuseIPDB IP rep check</text>
+    </g>
+    <g transform="translate(100, 495)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• PhishTank URL check</text>
+    </g>
+    <g transform="translate(100, 550)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#7c9bff"/>
+      <text x="14" y="25" font-size="11" fill="#a8b8e0">• AEGIS scam / manipulation</text>
+    </g>
+    <g transform="translate(100, 605)">
+      <rect width="280" height="40" rx="6" fill="#0e1428" stroke="#5eead4"/>
+      <text x="14" y="25" font-size="11" fill="#5eead4">→ risk score 0-100 per event</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="490" y="200" width="420" height="380" rx="16" fill="url(#card)" stroke="#5eead4" stroke-width="2"/>
+    <text x="700" y="235" text-anchor="middle" font-size="12" fill="#5eead4" letter-spacing="3">LAYER 2 — AI ANALYST</text>
+    <text x="700" y="270" text-anchor="middle" font-size="22" font-weight="700" fill="#e6edff">GEMINI BRAIN</text>
+    <text x="700" y="295" text-anchor="middle" font-size="11" fill="#a8b8e0">explains findings in plain English</text>
+
+    <line x1="510" y1="320" x2="890" y2="320" stroke="#1f2a4a"/>
+
+    <g transform="translate(510, 340)">
+      <rect width="380" height="60" rx="8" fill="#0e1428" stroke="#5eead4"/>
+      <text x="14" y="22" font-size="11" fill="#5eead4" letter-spacing="2">CONFIDENCE TIERING</text>
+      <text x="14" y="42" font-size="10" fill="#a8b8e0">low (monitor) · med (alert) · high (act)</text>
+    </g>
+    <g transform="translate(510, 415)">
+      <rect width="380" height="60" rx="8" fill="#0e1428" stroke="#5eead4"/>
+      <text x="14" y="22" font-size="11" fill="#5eead4" letter-spacing="2">PLAIN-ENGLISH STORY</text>
+      <text x="14" y="42" font-size="10" fill="#a8b8e0">"this looks like a RAT phoning home to 198..."</text>
+    </g>
+    <g transform="translate(510, 490)">
+      <rect width="380" height="60" rx="8" fill="#0e1428" stroke="#5eead4"/>
+      <text x="14" y="22" font-size="11" fill="#5eead4" letter-spacing="2">RECOMMENDED ACTION</text>
+      <text x="14" y="42" font-size="10" fill="#a8b8e0">KILL · QUARANTINE · BLOCK_IP · REMOVE_PERSIST</text>
+    </g>
+  </g>
+
+  <g>
+    <rect x="1000" y="120" width="320" height="540" rx="14" fill="url(#shield)" stroke="#ff4d6d" stroke-width="1.5"/>
+    <text x="1160" y="155" text-anchor="middle" font-size="12" fill="#ff4d6d" letter-spacing="3">LAYER 3 — ACTIVE DEFENSE</text>
+    <text x="1160" y="195" text-anchor="middle" font-size="18" font-weight="700" fill="#e6edff">RESPONSE ENGINE</text>
+
+    <g transform="translate(1020, 220)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">⚡ kill malicious process</text>
+    </g>
+    <g transform="translate(1020, 275)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">📦 quarantine file</text>
+    </g>
+    <g transform="translate(1020, 330)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">🚫 block IP via Windows Firewall</text>
+    </g>
+    <g transform="translate(1020, 385)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">🧹 remove persistence entries</text>
+    </g>
+    <g transform="translate(1020, 440)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">👁️ guard mode (loop)</text>
+    </g>
+    <g transform="translate(1020, 495)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">📓 threat diary (audit log)</text>
+    </g>
+    <g transform="translate(1020, 550)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#ff4d6d"/>
+      <text x="14" y="25" font-size="11" fill="#fca5b8">📊 PDF incident reports</text>
+    </g>
+    <g transform="translate(1020, 605)">
+      <rect width="280" height="40" rx="6" fill="#1a0712" stroke="#5eead4"/>
+      <text x="14" y="25" font-size="11" fill="#5eead4">→ system protected, you informed</text>
+    </g>
+  </g>
+
+  <line x1="405" y1="380" x2="485" y2="380" stroke="#ffb547" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="915" y1="380" x2="995" y2="380" stroke="#ffb547" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <text x="700" y="690" text-anchor="middle" font-size="10" fill="#6a7aa3">github.com/Danish-spidy/heimdall · (c) Danish 2026</text>
+</svg>
