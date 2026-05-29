@@ -32,7 +32,7 @@ It is an **EDR-style** tool (Endpoint Detection & Response): it inspects the OS 
 
 ## Demo
 
-<video src="https://github.com/Danish-spidy/heimdall-showcase/raw/main/demo/HEIMDALL_demo.mp4" controls width="100%"></video>
+https://github.com/user-attachments/assets/f129138e-93d8-40b7-b0be-93a28be7d850
 
 ![HEIMDALL hero](docs/hero.png)
 
